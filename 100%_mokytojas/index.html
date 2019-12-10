@@ -15,10 +15,12 @@
 <body>
 <header>
     <div class="inner">
-        <nav>
-            <img class="logo" src="images/Logo.png">
-            <img id="menu_toggle" src="images/menu-button.svg" class="menu_btn">
-            <ul class="nav_list" id="show_menu">
+        <nav id="overlay-menu" class="overlay-menu">
+            <div>
+                <img class="logo" src="images/Logo.png">
+                <button id="menu-toggle" class="menu-btn" type="button"></button>
+            </div>
+            <ul class="nav-list">
                 <li>Naujienos</li>
                 <li>Nominuok</li>
                 <li>Nominantai</li>
@@ -27,10 +29,10 @@
         </nav>
     </div>
 </header>
-<div class="section_one">
-    <img class="top_bubbles" src="images/top.png">
+<div class="section-one">
+    <img class="top-bubbles" src="images/top.png">
     <div class="inner">
-        <div class="left_side">
+        <div class="left-side">
             <h3>There are many variations
                 of passages</h3>
             <p>Yra daug įvarių Lorem Ipsum variantų, bet daugelis jų buvo vienokiu ar kitokiu būdu modifikuoti, pvz.
@@ -40,21 +42,21 @@
                 <a class="button"><span>Nominuok</span></a>
             </div>
         </div>
-        <div class="right_side">
+        <div class="right-side">
             <img src="images/sec_one.png">
         </div>
     </div>
 </div>
-<div class="section_two">
-    <img class="middle_bubble_left" src="images/middle_bubble_left.png">
-    <img class="middle_bubble_right" src="images/middle_bubble_right.png">
+<div class="section-two">
+    <img class="middle-bubble-left" src="images/middle_bubble_left.png">
+    <img class="middle-bubble-right" src="images/middle_bubble_right.png">
     <div class="inner">
         <h5>Nominuok</h5>
-        <div class="both_sides">
-            <div class="left_side">
+        <div class="both-sides">
+            <div class="left-side">
                 <img src="images/sec_two.png">
             </div>
-            <div class="right_side">
+            <div class="right-side">
                 <form>
                     <input type="text" name="teacher_name_lastname" placeholder="Mokytojo vardas, pavardė">
                     <div class="border">
@@ -93,9 +95,9 @@
                     </div>
                 </form>
                 <div class="nominuok">
-                    <input id="confirm" class="radio_button" type="checkbox" name="confirm" value="confirm">
+                    <input id="confirm" class="radio-button" type="checkbox" name="confirm" value="confirm">
                     <label for="confirm">Sutinku su taisyklėmis</label>
-                    <div class="container_2">
+                    <div class="container-2">
                         <a class="button"><span>Nominuok</span></a>
                     </div>
                 </div>
@@ -103,23 +105,22 @@
         </div>
     </div>
 </div>
-<div class="section_three">
+<div class="section-three">
     <div class="inner">
         <h4>Nominantai</h4>
-        <div class="all_three">
-            <div class="left_side">
-                <div class="top">
+        <div id="nominees" class="nominees-row">
+            <div class="nominees-col">
+                <div class="item">
                     <img class="quotes" src="images/kabutes.png">
                     <p class="p1">It is a long established fact that a reader will be distracted by the readable
                         content.</p>
                     <h1>Vardas Pavardė</h1>
                     <p class="p2">S. Daukanto vidurinė mokykla (matematika)</p>
-                    <div class="votes">
-                        <img class="heart" src="images/sirdele.png">
-                        <h2>1290</h2>
-                    </div>
+                    <h2 class="votes"><img class="heart" src="images/sirdele.png"> 1290</h2>
                 </div>
-                <div class="bottom">
+            </div>
+            <div class="nominees-col">
+                <div class="item">
                     <img class="quotes" src="images/kabutes.png">
                     <p class="p1">It is a long established fact that a reader will be distracted by the readable content
                         of a page
@@ -127,74 +128,58 @@
                         distribution of letters, as opposed to using 'Content here, content here'.</p>
                     <h1>Vardas Pavardė</h1>
                     <p class="p2">S. Daukanto vidurinė mokykla (matematika)</p>
-                    <div class="votes">
-                        <img src="images/sirdele.png">
-                        <h2>1290</h2>
-                    </div>
+                    <h2 class="votes"><img class="heart" src="images/sirdele.png"> 1290</h2>
                 </div>
             </div>
-            <div class="middle">
-                <div class="top">
+            <div class="nominees-col">
+                <div class="item">
                     <img class="quotes" src="images/kabutes.png">
-                    <p class="p1">It is a long established fact that a reader will be distracted by the readable content
-                        of a page
-                        when
-                        looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
-                        distribution of letters, as opposed to using 'Content here, content here'. </p>
+                    <p class="p1">It is a long established fact that a reader will be distracted by the. </p>
                     <h1>Vardas Pavardė</h1>
                     <p class="p2">S. Daukanto vidurinė mokykla (matematika)</p>
-                    <div class="votes">
-                        <img src="images/sirdele.png">
-                        <h2>1290</h2>
-                    </div>
-                </div>
-                <div class="bottom">
-                    <img class="quotes" src="images/kabutes.png">
-                    <p class="p1">It is a long established fact that a reader will be distracted by the.</p>
-                    <h1>Vardas Pavardė</h1>
-                    <p class="p2">S. Daukanto vidurinė mokykla (matematika)</p>
-                    <div class="votes">
-                        <img class="heart" src="images/sirdele.png">
-                        <h2>1290</h2>
-                    </div>
+                    <h2 class="votes"><img class="heart" src="images/sirdele.png"> 1290</h2>
                 </div>
             </div>
-            <div class="right_side">
-                <div class="top">
-                    <img class="quotes" src="images/kabutes.png">
-                    <p class="p1">It is a long established fact that a reader will be distracted by the.</p>
-                    <h1>Vardas Pavardė</h1>
-                    <p class="p2">S. Daukanto vidurinė mokykla (matematika)</p>
-                    <div class="votes">
-                        <img src="images/sirdele.png">
-                        <h2>1290</h2>
-                    </div>
-                </div>
-                <div class="bottom">
+            <div class="nominees-col">
+                <div class="item">
                     <img class="quotes" src="images/kabutes.png">
                     <p class="p1">It is a long established fact that a reader will be distracted by the readable
-                        content</p>
+                        content.</p>
                     <h1>Vardas Pavardė</h1>
                     <p class="p2">S. Daukanto vidurinė mokykla (matematika)</p>
-                    <div class="votes">
-                        <img src="images/sirdele.png">
-                        <h2>1290</h2>
-                    </div>
+                    <h2 class="votes"><img class="heart" src="images/sirdele.png"> 1290</h2>
+                </div>
+            </div>
+            <div class="nominees-col">
+                <div class="item">
+                    <img class="quotes" src="images/kabutes.png">
+                    <p class="p1">It is a long established fact that a reader will be distracted by the readable content
+                        of a page when looking at its layout. The point of using Lorem Ipsum is that it has a
+                        more-or-less normal distribution of letters, as opposed to using 'Content here, content
+                        here'. </p>
+                    <h1>Vardas Pavardė</h1>
+                    <p class="p2">S. Daukanto vidurinė mokykla (matematika)</p>
+                    <h2 class="votes"><img class="heart" src="images/sirdele.png"> 1290</h2>
+                </div>
+            </div>
+            <div class="nominees-col">
+                <div class="item">
+                    <img class="quotes" src="images/kabutes.png">
+                    <p class="p1">It is a long established fact that a reader will be distracted by the.</p>
+                    <h1>Vardas Pavardė</h1>
+                    <p class="p2">S. Daukanto vidurinė mokykla (matematika)</p>
+                    <h2 class="votes"><img class="heart" src="images/sirdele.png"> 1290</h2>
                 </div>
             </div>
         </div>
-        <div class="container_3">
+        <div class="container-3">
             <a class="button"><span>Daugiau</span></a>
         </div>
     </div>
 </div>
 <footer>
-    <div class="inner">
-        <p>© 2019, 100 % mokytojas. Visos teisės saugomos.
-        </p>
-    </div>
+    <div>© 2019, 100 % mokytojas. Visos teisės saugomos.</div>
 </footer>
-<img class="footer_bubble" src="images/footer_bubble.png">
-<img class="leafs" src="images/bottom_right.png">
+<script src="macy.js"></script>
 </body>
 </html>
